@@ -13,6 +13,25 @@
 
 ## Usage
 
+1. Download the file with your desired flavour e.g. rose-pine-moon.lua
+2. Copy it into your hyprland config e.g. ~/.config/hypr/
+    Include the file at the top of your hyprland.lua
+
+    ```lua
+    local colors = require('rose-pine-moon')
+
+3. When using the colors, use `colors` table e.g. `colors.base`
+
+    ```lua
+    col = {
+      active_border = { colors = { colors.rose, colors.pine }, angle = 90 },
+      inactive_border = muted,
+    }
+
+(Use favourite Rosé Pine accent as listed in .lua file)
+
+## Usage with Hyprland < 0.55 (hyprlang)
+
 1. Download the file with your desired flavour e.g. rose-pine-moon.conf
 2. Copy it into your hyprland config e.g. ~/.config/hypr/
     Include the file at the top of your hyprland.conf
